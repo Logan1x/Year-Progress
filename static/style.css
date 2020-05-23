@@ -1,0 +1,47 @@
+progress {
+    width: 40%;
+    display: block;
+    /* default: inline-block */
+    margin: 2em auto;
+    padding: 3px;
+    border: 0 none;
+    background: #d5d5da;
+    border-radius: 14px;
+}
+
+h1 {
+    width: 40%;
+    /* default: inline-block */
+    margin: 2em auto;
+    padding: 3px;
+}
+
+h2 {
+    width: 40%;
+    /* default: inline-block */
+    margin: 1em auto;
+    padding: 1px;
+}
+
+progress::-moz-progress-bar {
+    border-radius: 12px;
+    background: #1E90FF;
+}
+
+
+/* webkit */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    progress {
+        height: 25px;
+    }
+}
+
+progress::-webkit-progress-bar {
+    background: transparent;
+}
+
+progress::-webkit-progress-value {
+    border-radius: 12px;
+    background: orange;
+}
