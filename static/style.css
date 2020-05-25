@@ -1,3 +1,7 @@
+body {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
 progress {
     width: 40%;
     display: block;
@@ -5,27 +9,43 @@ progress {
     margin: 2em auto;
     padding: 3px;
     border: 0 none;
-    background: #d5d5da;
+    background: #0c0f0a;
     border-radius: 14px;
 }
 
+small {
+    color: black
+}
+
+.container {
+    line-height: 1.15;
+    text-align: center;
+}
+
+
+/* 
 h1 {
     width: 40%;
     /* default: inline-block */
-    margin: 2em auto;
-    padding: 3px;
-}
 
-h2 {
+
+/* margin: 2em auto;
+    padding: 3px;
+} */
+
+
+/*h2 {
     width: 40%;
     /* default: inline-block */
-    margin: 1em auto;
+
+
+/*margin: 1em auto;
     padding: 1px;
-}
+} */
 
 progress::-moz-progress-bar {
     border-radius: 12px;
-    background: #1E90FF;
+    background: #ff206e;
 }
 
 
