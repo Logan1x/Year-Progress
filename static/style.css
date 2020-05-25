@@ -1,5 +1,15 @@
+body,
+html {
+    height: 100%;
+}
+
 body {
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
 }
 
 progress {

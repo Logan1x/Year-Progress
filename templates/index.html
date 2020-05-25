@@ -8,14 +8,31 @@
 		<link rel='stylesheet' href='static/style.css' />
 	</head>
    <body>
-      <div class="container text-center">
-         <h1 class="display-1">Year progress {{ item }}% </h1>
-         <h2>{{ doy }} days has been passed out of {{ yleap }} </h2>
-         <!--<div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: {{ item }}%;" aria-valuenow="{{ item }}" aria-valuemin="0" aria-valuemax="100">{{ item }}%</div>
-         </div>-->
-         <progress value = {{ item }} max = "100"/>
+      <div class="container text-center d-flex h-100">
+         <div class="row align-self-center w-100">
+            <div class="col-6 mx-auto">
+               <h1 class="display-4">Year Progress</h1>
+               <p class="lead">{{ doy }} days has been passed out of {{ yleap }}.</p>
+               <div class="progress" style="height:30px">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: {{ item }}%;height:30px" aria-valuenow="{{ item }}" aria-valuemin="0" aria-valuemax="100">{{ item }}%</div>
+               </div>
+               <!--<progress value = {{ item }} max = "100"/> -->
+            </div>
+         </div>
       </div>
+      <!--<div class="container d-flex h-100">
+         <div class="row align-self-center w-100">
+            <div class="col-6 mx-auto">
+                  <div class="jumbotron">
+                     <h1 class="display-4">Year Progress</h1>
+                     <p class="lead">{{ doy }} days has been passed out of {{ yleap }}.</p>
+                        <div class="progress" style="height:30px">
+                           <div class="progress-bar" style="width:39%;height:30px"></div>
+                        </div>
+                  </div>
+            </div>
+         </div>
+      </div>-->
    </body>
 </html>
 
